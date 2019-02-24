@@ -40,5 +40,24 @@ and open the template in the editor.
         var z = cero(); 
         var t = uno(); 
         console.log(t());
+        
+        function dos_a (n) {
+            var res = 1;
+                while (n > 0 ) {
+                      res = res * 2;
+                      n = n - 1;
+                }
+            return res;
+        }
+
+        function numero_primo (x) {
+             for (let i=2; i<x; i++) {
+                     if ((x % i) === 0) { return false; };
+             }
+             return true;
+        }
+        
+        console.log(dos_a(8));
+
     </script>
 </html>
