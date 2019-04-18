@@ -1,0 +1,17 @@
+[  
+   {  
+      "id":1,
+      "text":"Primera pregunta",
+      "answerok":1,
+      "answers":[  
+         {  
+            "id":1,
+            "text":"qqq"
+         },
+         {  
+            "id":2,
+            "text":"qqq"
+         }
+      ]
+   }
+]
