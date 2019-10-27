@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Práctica Módulo #4</title>
+        <script type="text/javascript" src="dataTable.js" />
+        <script>
+            window.onload = function()
+            {
+                // Parte 1
+                var _elements = document.getElementsByTagName('p');
+                var _txt = '';
+                for (var i=0; i<_elements.length; i++) _txt += (_elements[i].innerHTML+'\n');
+                alert(_txt);
+
+                // Parte 2
+                var _elementP = document.createElement('p');
+                _elementP.innerHTML = 'Módulo 5. Ajax y JQuery';
+                document.body.appendChild(_elementP);
+            }
+        </script>
+    </head>
+    <body>
+        <p>Módulo 1. Páginas Dinámicas</p>
+        <p>Módulo 2. Sintaxis Del Lenguaje JavaScript</p>
+        <p>Módulo 3. Control De Flujo</p>
+        <p>Módulo 4. Eventos Y Objetos</p>
+    </body>
+</html>

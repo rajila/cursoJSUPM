@@ -60,4 +60,32 @@ and open the template in the editor.
         console.log(dos_a(8));
 
     </script>
+    <?php
+        function sumaArray($lista){
+            return ( count($lista)!= 0 ) ? SUM($lista,0) : 0;
+        }
+        
+        // Función recursiva
+        function SUM($element, $index){
+            $_type = gettype($element[$index]); // Verificamos el tipo de elemento del array
+            if( $_type == "array" ){
+                if( count($element[$index]) == 0 ) array_push($element, 0);
+                else array_push($element, ...$element[$index]); // agregamos el nuevo array al final
+                return 0 + SUM($element, ++$index); // Como el elemento es un array se suma a CERO
+            }else if( $_type == "NULL" || $_type == "string" || $_type == "boolean" ){
+                if( count($element) == $index+1 ) return 0;
+                else return 0 + SUM($element, ++$index); // Si el elemento del array no es entero se suma a CERO
+            }else{
+                if( count($element) == $index+1 ) // Validamos para terminar el fin de la llamada de la función recursiva
+                    return $element[$index];
+                else
+                    return $element[$index] + SUM($element, ++$index); // Suma el elemento actual y vuelve a invocar la función
+            }
+        }
+        //echo sumaArray([1, 4, 3, null, [2,3, null, [1,2,3], 0], 0]);
+        //echo sumaArray([[], 3,4]);
+        echo sumaArray([[1,2,3,[]],[[],NULL,[1,2,3]],1]);
+        
+        //$i=0;while ($i=1) echo '<br/>'.++$i ;
+    ?>
 </html>
