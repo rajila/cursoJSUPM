@@ -1,0 +1,94 @@
+[  
+   {  
+      "id":1,
+      "text":"¿Cuál de los siguientes no es un tipo de objeto Javascript?",
+      "answerok":3,
+      "answers":[  
+         {  
+            "id":1,
+            "text":"String"
+         },
+         {  
+            "id":2,
+            "text":"Window"
+         },
+         {  
+            "id":3,
+            "text":"Console"
+         },
+         {  
+            "id":4,
+            "text":"Array"
+         }
+      ]
+   },
+   {  
+      "id":2,
+      "text":"El evento que se produce al cargar una página en el navegador es:",
+      "answerok":5,
+      "answers":[  
+         {  
+            "id":5,
+            "text":"onLoad del body"
+         },
+         {  
+            "id":6,
+            "text":"onInit de Document"
+         },
+         {  
+            "id":7,
+            "text":"onEnter de body"
+         },
+         {  
+            "id":8,
+            "text":"onOpen de Window"
+         }
+      ]
+   },
+   {  
+      "id":3,
+      "text":"Para crear un temporizador en Javascript utilizaremos",
+      "answerok":11,
+      "answers":[  
+         {  
+            "id":9,
+            "text":"El método setTemp del objeto Document"
+         },
+         {  
+            "id":10,
+            "text":"La función timer de JavaScript."
+         },
+         {  
+            "id":11,
+            "text":"El método setInterval del objeto Window"
+         },
+         {  
+            "id":12,
+            "text":"El método setTimer del objeto Navigator"
+         }
+      ]
+   },
+   {  
+      "id":4,
+      "text":"¿Qué hace la instrucción document.write()?",
+      "answerok":14,
+      "answers":[  
+         {  
+            "id":13,
+            "text":"Envía un documento al servidor"
+         },
+         {  
+            "id":14,
+            "text":"Escribe un texto html dentro de la página"
+         },
+         {  
+            "id":15,
+            "text":"Muestra un texto en un cuadro de diálogo"
+         },
+         {  
+            "id":16,
+            "text":"Navega a una determinada página"
+         }
+      ]
+   }
+]
